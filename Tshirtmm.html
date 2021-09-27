@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>
+            Tshirts
+        </title>
+        <!-- <link rel="stylesheet" href="tshirtsty.css"> -->
+    </head>
+    <style>
+        body {
+            background-color: navajowhite;
+            display: table;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 300%;
+            color: black;
+            text-align: center;
+        }
+
+        #size {
+            color: black;
+        }
+
+        #submit {
+            width: 30%;
+            background-color: black;
+            color: white;
+            display: table;
+            margin: 0 auto;
+        }
+
+        #form {
+            display: table;
+            margin: 0 auto;
+        }
+
+        #color {
+            font-size: 90%;
+            font-family: Arial black;
+        }
+
+        #txtarea {
+            font-family: arial black;
+        }
+
+        #payment {
+            display: table;
+            margin: 0 auto;
+        }
+
+        input {
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+
+    <body>
+
+        <h1 ">Customized T-shirts <br>
+    </h1>
+    <hr>
+
+
+
+    <div id=" form">
+            <form style="font-size:20px; color:black" id="cpa-form">
+
+                <br>
+
+                Gender
+                <div style="color:black; font-family: arial black">
+                    <select  id ="gen" style="font-size: 80%; font-family: Arial black">
+
+                        <option style="color:black">Male</option>
+                        <option style="color:black">Female</option>
+                    </select>
+                </div>
+
+                <br>
+
+                Colour
+                <div id="color">
+                    <select id="colr">
+                        <option style="color:black"> Black</option>
+                        <option style="color:#00FF00">Lime</option>
+                        <option style="color:#800080">Purple</option>
+                        <option style="color:#FFFF00">Yellow</option>
+                        <option style="color:#FF1493">Deep Pink</option>
+                        <option style="color:white">White</option>
+
+                    </select>
+
+                </div>
+
+                <br>
+
+                Tagline on your tshirt
+                <div style="color:black; font-family: Arial black">
+                    <input type="text" id="tag" placeholder="Tagline" style="font-size: 80% ">
+
+                </div>
+                <br>
+
+                Size
+                <div id="size">
+
+                    <div>
+
+                        <select  id="siz" style="font-size: 70%; font-family: Arial black">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </div>
+
+                    <br>
+                    <br>
+
+
+                    Quantity of the Customized tshirt
+                    <div>
+                        <input type="number" value="1" step="1" min="1" max="10" id="qunty" style="font-family: arial black ">
+                    </div>
+
+                    <br>
+
+
+                    Delivery Address
+                    <div>
+                        <textarea rows="10" cols="25" placeholder="Enter your address"
+                            id="add" style="font-family: arial black"></textarea>
+                    </div>
+                    <pre></pre>
+                    <p>Name</p>
+                    <input placeholder="Enter Name" id="name" />
+                    <p>Email Id</p>
+                    <input placeholder="Enter Email Id" type="email" id="email" />
+                    <p>Phone Number</p>
+                    <input placeholder="Enter Phone Numer" id="number" />
+                    <p> Postal Pincode</p>
+                    <input placeholder="Enter Postal pincode" id="pin" />
+
+                    <pre></pre>
+                    <p>
+                        <strong>Choose payment options:</strong>
+                    </p>
+                    <div id="payment">
+                        <input type="radio" id="card" id="pay" value="Card">
+                        <label for="card">Card</label><br>
+                        <input type="radio" id="paytm" id="pay" value="Paytm">
+                        <label for="paytm">Gpay</label><br>
+                        <input type="radio" id="cash" id="pay" value="Cash">
+                        <label for="cash">Cash</label>
+                    </div>
+                    <p><strong>Total amount:</strong> ₹ 400</p>
+
+
+                    <input type="Submit" id="submit">
+
+                </div>
+
+                </div>
+    </body>
+    <script src="formvalidation.js"></script>
+
+</html>
